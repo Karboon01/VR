@@ -63,7 +63,7 @@ class Main extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">TEXT</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('text') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">TEXT</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('text') . '</td></tr>',
             'table' => 'MAIN - HEADER - EDIT',
             'datetime' => now(),
         ]);
@@ -107,9 +107,9 @@ class Main extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_name . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('name') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">LOCATION</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_location . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('location') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">DESCRIPTION</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_descr . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('descr') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_name . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('name') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">LOCATION</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_location . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('location') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">DESCRIPTION</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_descr . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('descr') . '</td></tr>',
             'table' => 'MAIN - CARD 1 - EDIT',
             'datetime' => now(),
         ]);
@@ -148,7 +148,7 @@ class Main extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">VIDEO</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_video . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('video') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">VIDEO</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_video . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('video') . '</td></tr>',
             'table' => 'MAIN - CARDS 2 - EDIT',
             'datetime' => now(),
         ]);

@@ -56,9 +56,9 @@ class Banner extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5 justify-between"><td class="w-[125px]">HEADING</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_heading . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('heading') . '</td></tr>
-            <tr class="flex gap-5 justify-between"><td class="w-[125px]">BACKGROUND</td><td>-</td><td class="break-all text-balance w-[500px]">' . $old_background . '</td><td> => </td><td class="break-all text-balance w-[500px]">' . $request->input('background') . '</td></tr>
-            <tr class="flex gap-5 justify-between"><td class="w-[125px]">PAGE</td><td>-</td><td class="break-all text-balance w-[500px]">' . $old_page . '</td><td> => </td><td class="break-all text-balance w-[500px]">' . $request->input('page') . '</td></tr>',
+            'name' => '<tr class="flex gap-5 justify-between"><td class="w-[125px]">HEADING</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_heading . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('heading') . '</td></tr>
+            <tr class="flex gap-5 justify-between"><td class="w-[125px]">BACKGROUND</td><td>-</td><td class="break-all text-wrap w-[500px]">' . $old_background . '</td><td> => </td><td class="break-all text-wrap w-[500px]">' . $request->input('background') . '</td></tr>
+            <tr class="flex gap-5 justify-between"><td class="w-[125px]">PAGE</td><td>-</td><td class="break-all text-wrap w-[500px]">' . $old_page . '</td><td> => </td><td class="break-all text-wrap w-[500px]">' . $request->input('page') . '</td></tr>',
             'table' => 'BANNERS - EDIT',
             'datetime' => now(),
         ]);

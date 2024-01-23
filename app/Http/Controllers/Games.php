@@ -64,9 +64,9 @@ class Games extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">HEADER</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_header . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('header') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">TEXT</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('text') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">IMAGE</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_image . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('image') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">HEADER</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_header . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('header') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">TEXT</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('text') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">IMAGE</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_image . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('image') . '</td></tr>',
             'table' => 'GAME - CARDS - EDIT',
             'datetime' => now(),
         ]);

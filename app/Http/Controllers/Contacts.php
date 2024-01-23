@@ -64,9 +64,9 @@ class Contacts extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">PHONE</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_phone . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('phone') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">E-MAIL</td><td>-</td><td class="break-all text-balance w-[500px]">' . $old_email . '</td><td> => </td><td class="break-all text-balance w-[500px]">' . $request->input('email') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">ADDRESS</td><td>-</td><td class="break-all text-balance w-[500px]">' . $old_address . '</td><td> => </td><td class="break-all text-balance w-[500px]">' . $request->input('address') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">PHONE</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_phone . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('phone') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">E-MAIL</td><td>-</td><td class="break-all text-wrap w-[500px]">' . $old_email . '</td><td> => </td><td class="break-all text-wrap w-[500px]">' . $request->input('email') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">ADDRESS</td><td>-</td><td class="break-all text-wrap w-[500px]">' . $old_address . '</td><td> => </td><td class="break-all text-wrap w-[500px]">' . $request->input('address') . '</td></tr>',
             'table' => 'CONTACTS - EDIT',
             'datetime' => now(),
         ]);

@@ -76,8 +76,8 @@ class Social extends Controller
         ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-balance">' . $request->input('name') . '</td></tr>
-             <tr class="flex gap-5"><td class="w-[75px]">ICON</td><td>-</td><td class="break-all text-balance">' . $request->input('icon') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-wrap">' . $request->input('name') . '</td></tr>
+             <tr class="flex gap-5"><td class="w-[75px]">ICON</td><td>-</td><td class="break-all text-wrap">' . $request->input('icon') . '</td></tr>',
             'table' => 'SOCIAL - CREATE',
             'datetime' => now(),
         ]);
@@ -89,8 +89,8 @@ class Social extends Controller
         $social = DB::table('social')->where('id', $request->id)->first();
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-balance">' . $social->name . '</td></tr>
-             <tr class="flex gap-5"><td class="w-[75px]">ICON</td><td>-</td><td class="break-all text-balance">' . $social->icon . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-wrap">' . $social->name . '</td></tr>
+             <tr class="flex gap-5"><td class="w-[75px]">ICON</td><td>-</td><td class="break-all text-wrap">' . $social->icon . '</td></tr>',
             'table' => 'SOCIAL - DELETE',
             'datetime' => now(),
         ]);

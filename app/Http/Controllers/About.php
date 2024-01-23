@@ -82,9 +82,9 @@ class About extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">HEADER</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_header . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('header') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">TEXT</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('text') . '</td></tr>
-            <tr class="flex gap-5"><td class="w-[75px]">BACKGROUND</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_background . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('background') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">HEADER</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_header . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('header') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">TEXT</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('text') . '</td></tr>
+            <tr class="flex gap-5"><td class="w-[75px]">BACKGROUND</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_background . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('background') . '</td></tr>',
             'table' => 'ABOUT US - CARDS - EDIT',
             'datetime' => now(),
         ]);
@@ -121,7 +121,7 @@ class About extends Controller
             ]);
 
         DB::table('change_log')->insert([
-            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-balance w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-balance w-[500px]">' . $request->input('text') . '</td></tr>',
+            'name' => '<tr class="flex gap-5"><td class="w-[75px]">NAME</td><td>-</td><td class="break-normal text-wrap w-[500px]">' . $old_text . '</td><td> => </td><td class="break-normal text-wrap w-[500px]">' . $request->input('text') . '</td></tr>',
             'table' => 'ABOUT US - TEXT - EDIT',
             'datetime' => now(),
         ]);
