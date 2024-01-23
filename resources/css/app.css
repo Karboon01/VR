@@ -1,0 +1,25 @@
+@import 'Nav/Nav.scss';
+@import 'Footer/Footer.scss';
+@import 'StyleSR/StyleSR.scss';
+@import 'MinFont/MinFont.scss';
+@import 'Main/Main.scss';
+@import 'Modal/Modal.scss';
+@import 'Games/Games.scss';
+@import 'Gallery/Gallery.scss';
+@import 'Contact/Contact.scss';
+@import 'Profile/Profile.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    @apply p-0 box-border;
+    background: #E0E0E0 !important
+}
+
