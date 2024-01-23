@@ -13,13 +13,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Chunky;
+    src: url(../media/fonts/Chunky_Funks.otf);
+}
+
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: Chunky;
 }
 
 body {
     @apply p-0 box-border;
     background: #E0E0E0 !important
 }
-
